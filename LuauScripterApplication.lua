@@ -1,14 +1,16 @@
--- Connected Discord-GitHub
--- Discord: @its7dx (1467321234558681269)
--- Roblox: Vlxnrs
 --[[
-Luau Scripter Application Demo
+    Turret system script
 
-Evaluation-relevant features:
-- Metatable-based classes (projectile pool, turret controller)
-- Predictive aiming with CFrame math + interception solver
-- Physics projectiles, raycast verification, and server-side target validation
-- Runtime optimization via pooling and controlled update cadence
+    This system controls automated turrets that:
+    - Track nearby targets using CollectionService tags
+    - Predict movement using velocity-based aiming
+    - Fire physical projectiles with collision + raycast validation
+
+    I used a projectile pool to avoid creating/destroying parts constantly,
+    which helps performance when multiple turrets are active.
+
+    The script is structured using tables + metatables to simulate classes
+    for both turrets and projectile management.
 ]]
 
 local RunService = game:GetService("RunService")
