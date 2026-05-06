@@ -1,3 +1,6 @@
+-- Connected Discord-GitHub
+-- Discord: @its7dx (1467321234558681269)
+-- Roblox: Vlxnrs
 --[[
 Luau Scripter Application Demo
 
